@@ -1,13 +1,82 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+# Laravel & PHP
+laravel12/vendor/
+laravel12/node_modules/
+laravel12/public/hot
+laravel12/public/storage
+laravel12/storage/*.key
+laravel12/.env
+laravel12/.env.backup
+laravel12/.env.production
+laravel12/.phpunit.result.cache
+laravel12/Homestead.json
+laravel12/Homestead.yaml
+laravel12/auth.json
+laravel12/npm-debug.log
+laravel12/yarn-error.log
+laravel12/.DS_Store
+laravel12/Thumbs.db
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Laravel 5 & Lumen specific
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Logs
+*.log
+logs/
+
+# Coverage reports
+coverage/
+*.clover
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Build artifacts
+dist/
+build/
+
+# SSL certificates (if any)
+*.pem
+*.key
+*.crt
+
+# Backup files
+*.backup
+*.bak
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Environment specific
+.env.local
+.env.staging
+.env.production
+
+# PHPStorm
+.phpstorm.meta.php
+_ide_helper.php
 public/storage
 public/hot
 
