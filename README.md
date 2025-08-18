@@ -1,22 +1,23 @@
-# 🚀 Laravel Base - Complete CI/CD Setup
+# 🚀 Laravel Base - Development Ready
 
 [![CI/CD Pipeline](https://github.com/Rofiq02bae/laravel-base/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Rofiq02bae/laravel-base/actions/workflows/ci-cd.yml)
 [![Docker Image](https://img.shields.io/badge/docker-rofiq02bae%2Flaravel--base--app-blue)](https://hub.docker.com/r/rofiq02bae/laravel-base-app)
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.3-purple.svg)](https://php.net)
 
-A production-ready Laravel 12 application with complete CI/CD pipeline, Docker containerization, and automated deployment to Docker Hub.
+A development-ready Laravel 12 application with Docker containerization, CI/CD pipeline, and comprehensive development tools.
 
 ## ✨ Features
 
 - 🐘 **Laravel 12** - Latest version with all modern features
-- 🐳 **Docker** - Complete containerization with multi-stage builds
+- 🐳 **Docker** - Complete containerization for development
 - 🔄 **CI/CD** - Automated testing, building, and deployment
 - 📧 **Email Testing** - Mailhog integration for development
-- 🗄️ **Database** - MySQL 8.0 with migrations
+- 🗄️ **Database** - MySQL 8.0 with phpMyAdmin
 - 🔒 **Security** - Automated vulnerability scanning
-- 📊 **Monitoring** - Health checks and performance monitoring
-- 🚀 **Auto Deploy** - Automatic deployment to staging/production
+- 📊 **Monitoring** - Health checks and status endpoints
+- 🛠️ **Dev Tools** - Quick start scripts, Makefile, and helper commands
+- 🚀 **Docker Hub** - Automated image building and deployment
 
 ## 🏗️ Architecture
 
@@ -41,13 +42,53 @@ A production-ready Laravel 12 application with complete CI/CD pipeline, Docker c
 
 ## 🚀 Quick Start
 
-### Development Environment
+### Using Quick Start Script (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/Rofiq02bae/laravel-base.git
+cd laravel-base
+
+# Run the quick start script
+chmod +x quick-start.sh
+./quick-start.sh
+
+# Or use Make
+make setup
+```
+
+### Manual Development Setup
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Rofiq02bae/laravel-base.git
-   cd laravel-base/laravel12
+   cd laravel-base
    ```
+
+2. **Start development environment:**
+   ```bash
+   cd laravel12
+   docker compose up -d
+   ```
+
+3. **Access the application:**
+   - **Laravel App**: http://localhost
+   - **phpMyAdmin**: http://localhost:8888
+   - **Mailhog**: http://localhost:8025
+
+### Available Scripts
+
+| Script | Description |
+|--------|-------------|
+| `./quick-start.sh` | Complete setup and start |
+| `./dev-helper.sh help` | Show all development commands |
+| `make help` | Show all available make commands |
+| `make start` | Start all services |
+| `make stop` | Stop all services |
+| `make health` | Check services health |
+| `make test-email` | Send test email |
+| `make artisan` | Run Laravel Artisan commands |
+| `make composer` | Run Composer commands |
 
 2. **Start development environment:**
    ```bash
